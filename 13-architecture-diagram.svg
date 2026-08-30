@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 780" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="780" fill="#ffffff"/>
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1F3864">SafeRoad+ - Architecture Diagram</text>
+
+  <!-- Layer 1: UI -->
+  <rect x="200" y="70" width="500" height="150" rx="10" fill="#EAF1FB" stroke="#1F3864" stroke-width="1.5"/>
+  <text x="450" y="98" text-anchor="middle" font-size="16" font-weight="700" fill="#1F3864">User Interface (UI)</text>
+  <text x="230" y="126" font-size="12.5" fill="#222">- Mobile App / Web App</text>
+  <text x="230" y="148" font-size="12.5" fill="#222">- Accident Reporting</text>
+  <text x="230" y="170" font-size="12.5" fill="#222">- Live Map Display</text>
+  <text x="230" y="192" font-size="12.5" fill="#222">- Notifications</text>
+
+  <!-- arrows between UI and Logic -->
+  <line x1="420" y1="220" x2="420" y2="290" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="290" x2="480" y2="220" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="80" y="245" font-size="11.5" fill="#333">User Actions / Requests</text>
+  <text x="620" y="245" font-size="11.5" fill="#333">Notifications / Route Suggestions</text>
+
+  <!-- Layer 2: Business Logic -->
+  <rect x="170" y="290" width="560" height="220" rx="10" fill="#1F3864" stroke="#1F3864" stroke-width="1.5"/>
+  <text x="450" y="320" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Authentication &amp; Business Logic</text>
+  <text x="200" y="350" font-size="12.5" fill="#ffffff">- Login / Register</text>
+  <text x="200" y="374" font-size="12.5" fill="#ffffff">- User Profile Management</text>
+  <text x="200" y="398" font-size="12.5" fill="#ffffff">- Access Control</text>
+  <text x="200" y="422" font-size="12.5" fill="#ffffff">- Accident Detection</text>
+  <text x="200" y="446" font-size="12.5" fill="#ffffff">- Alert Manager</text>
+  <text x="200" y="470" font-size="12.5" fill="#ffffff">- Route Recommendation</text>
+
+  <!-- arrows between Logic and Data -->
+  <line x1="420" y1="510" x2="420" y2="580" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="580" x2="480" y2="510" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="530" y="548" font-size="11.5" fill="#333">Data Access / API Calls</text>
+
+  <!-- Layer 3: Data / Infrastructure -->
+  <rect x="150" y="580" width="600" height="150" rx="10" fill="#EAF1FB" stroke="#1F3864" stroke-width="1.5"/>
+  <text x="450" y="608" text-anchor="middle" font-size="16" font-weight="700" fill="#1F3864">Data / Infrastructure</text>
+  <text x="180" y="636" font-size="12.5" fill="#222">- Database (Users, Incidents, Map/Traffic Data)</text>
+  <text x="180" y="658" font-size="12.5" fill="#222">- External APIs (Weather, Traffic, Maps)</text>
+  <text x="180" y="680" font-size="12.5" fill="#222">- Servers / OS</text>
+
+  <text x="450" y="755" text-anchor="middle" font-size="11" fill="#888">SafeRoad+ - Software Engineering Term Project</text>
+</svg>
